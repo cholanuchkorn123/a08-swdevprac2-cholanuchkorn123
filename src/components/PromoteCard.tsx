@@ -12,10 +12,10 @@ export default function PromoteCard() {
   });
 
   return (
-    <div className="w-[80%] shadow-lg mx-[10%] my-10 p-2 rounded-lg bg-gray-200 flex flex-row">
+    <div className="w-[80%] shadow-lg mx-[10%] my-10 p-2 rounded-lg border border-gray-400 bg-[#f5ebd7] text-black flex flex-row">
       <VideoPlayer vdoSrc="/vdo/venue.mp4" isPlaying={playing} />
       <div className="m-5 flex flex-col justify-between">
-        <div className="text-xl">Book your venue today.</div>
+        <div className="text-xl text-black">Book your venue today.</div>
         <button
           className="block rounded-md bg-sky-600 hover:bg-indigo-600 px-3 py-2 text-white shadow-sm w-fit"
           onClick={() => setPlaying(!playing)}
